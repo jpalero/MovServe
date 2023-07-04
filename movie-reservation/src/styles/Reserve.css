@@ -1,0 +1,164 @@
+.empty-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.empty-container .Notification {
+  font-size: 80px;
+  animation: blink 1.5s infinite;
+  z-index: 100;
+}
+
+@keyframes blink {
+  0% {
+    color: #000;
+  }
+  40% {
+    color: #000;
+  }
+  60% {
+    color: transparent;
+  }
+  80% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.reserve-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.reserve-container .total-ticket {
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.reserve-container .ticket-container {
+  background-color: #2a2831;
+  margin: 0 4rem;
+  box-shadow: 10px 10px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+.reserve-container .ticket-container .table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ff6600;
+}
+
+.reserve-container .ticket-container .table-row .img-container img {
+  height: 6rem;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.reserve-container .ticket-container .table-row .title,
+.reserve-container .ticket-container .table-row .price,
+.reserve-container .ticket-container .table-row .quantity {
+  width: 400px;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.reserve-container .ticket-container .table-row .button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 200px;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.reserve-container .ticket-container .table-row .button-container .minus-btn,
+.reserve-container .ticket-container .table-row .button-container .add-btn {
+  height: 4rem;
+  width: 2rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff6600;
+  cursor: pointer;
+}
+
+.reserve-container .ticket-container .table-row .button-container .delete-btn {
+  height: 4rem;
+  width: 6rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+.reserve-container
+  .ticket-container
+  .table-row
+  .button-container
+  .minus-btn:hover,
+.reserve-container
+  .ticket-container
+  .table-row
+  .button-container
+  .add-btn:hover {
+  background-color: #ff6600;
+}
+
+.reserve-container
+  .ticket-container
+  .table-row
+  .button-container
+  .delete-btn:hover {
+  background-color: #fd3838;
+}
+
+.reserve-container .total-price-container {
+  margin: 2rem 4rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.reserve-container .total-price-container .total-price {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.reserve-container .total-price-container .clear-btn {
+  width: 4rem;
+  border: none;
+  box-shadow: 10px 10px 24px -3px rgba(0, 0, 0, 0.75);
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-container .total-price-container .buy-btn {
+  width: 6rem;
+  border: none;
+  box-shadow: 10px 10px 24px -3px rgba(0, 0, 0, 0.75);
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-container .total-price-container .clear-btn:hover {
+  background-color: #fd3838;
+}
+
+.reserve-container .total-price-container .buy-btn:hover {
+  background-color: #e36512;
+}

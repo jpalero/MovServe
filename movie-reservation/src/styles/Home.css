@@ -1,0 +1,8 @@
+.home-container {
+  height: 200vh;
+  background-image: url("./assets/movie-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -100;
+}
