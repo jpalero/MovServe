@@ -1,9 +1,10 @@
 import React from "react";
 import { useCart } from "react-use-cart";
-
 import "../styles/Reserve.css";
+import { useNavigate } from "react-router-dom";
 
 const Reserve = () => {
+  const navigate = useNavigate();
   const {
     isEmpty,
     totalUniqueItems,
@@ -20,6 +21,12 @@ const Reserve = () => {
         <div className="Notification">Please reserve your ticket here!</div>
       </div>
     );
+
+  const selectedItems = items.map((item) => ({
+    title: item.title,
+    quantity: item.quantity,
+  }));
+
   return (
     <section>
       <div className="reserve-container">
@@ -69,7 +76,21 @@ const Reserve = () => {
           <button className="clear-btn" onClick={() => emptyCart()}>
             Clear
           </button>
-          <button className="buy-btn">Buy Now</button>
+          <button
+            className="buy-btn"
+            onClick={() =>
+              navigate("/buynow", {
+                state: {
+                  totalUniqueItems,
+                  totalItems,
+                  cartTotal,
+                  selectedItems,
+                },
+              })
+            }
+          >
+            Buy Now
+          </button>
         </div>
       </div>
     </section>

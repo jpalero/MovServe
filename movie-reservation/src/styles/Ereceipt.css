@@ -1,0 +1,77 @@
+.ereceipt-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem 0 2rem;
+}
+
+/* EReceipt Container */
+.ereceipt-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ereceipt-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ereceipt-container li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Receipt Details */
+.receipt-details {
+  background-color: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.receipt-details h3 {
+  margin-top: 10px;
+}
+
+.receipt-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.receipt-details li {
+  margin: 5px 0;
+}
+
+/* QR Code */
+.qr-code {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Done Button */
+
+.done-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.done-btn:hover {
+  background-color: #e36512;
+}

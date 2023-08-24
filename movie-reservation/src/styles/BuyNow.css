@@ -1,0 +1,167 @@
+.buy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.buy-form {
+  height: auto;
+  width: 400px;
+  border: 1px solid #000;
+  background: rgba(177, 175, 175, 0.164);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 2rem 0 2rem;
+}
+
+.buy-form .personal-info input,
+.buy-form .reserve-info input {
+  padding: 0 10px;
+}
+
+.buy-form .personal-info input::after,
+input:focus {
+  outline: none;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem;
+  gap: 1rem;
+}
+
+.reserve-info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem;
+  gap: 1rem;
+}
+
+.reserved-movies {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem;
+  gap: 1rem;
+}
+
+.reserved-movies ul {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  background-color: #2a2831;
+  /*box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.5);*/
+  color: #ff6600;
+}
+.movie-list span {
+  border: 1px solid #fff;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 2rem 2rem;
+  gap: 1rem;
+  height: 50px;
+}
+
+.back-btn,
+.submit-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn,
+.submit-btn {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.back-btn:hover,
+.submit-btn:hover {
+  background-color: #e36512;
+  color: #fff;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Style for invalid input */
+input.error {
+  border: 1px solid #ff0000;
+}
+
+/* Style for error message */
+.error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Modal */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin: 10px 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.modal-buttons button:hover {
+  background-color: #e36512;
+  color: #fff;
+}
