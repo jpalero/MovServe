@@ -21,7 +21,7 @@ This will show you the list of your reserve movies and other details. It's also 
 
 <img width="950" alt="image" src="https://github.com/jpalero/MovServe/assets/131837340/235ae087-a220-41cc-b136-421af94ad7fd">
 
-Then need to confirm if the customer needs to proceed. It also have a validation for inputs if you want to confirm. You need to fill up all the needed information before you the popmup confirmation shows.
+Then need to confirm if the customer needs to proceed. It also have a validation for inputs if you want to confirm. You need to fill up all the needed information before you the pop up confirmation shows.
 
 <img width="934" alt="image" src="https://github.com/jpalero/MovServe/assets/131837340/1dffa301-15c1-4d3b-a2f5-f286e56066af">
 
